@@ -5,54 +5,67 @@
 using namespace std;
 int main()
 {
-	double c, h, o;
-	int a;
-	cout << "Choose ton desmo tvn anthrakvn 1.monos (-), 2.diplos (=), 3.triplos " << endl;
-	cin >> a;
-	if (a == 1)
+	while (true)
 	{
-		cout << "Enter the number of C " << endl;
-		cin >> c;
-		if (c <= 0)
+		double c, h, o;
+		int a;
+		cout << "Choose ton desmo tvn anthrakvn 1.monos (-), 2.diplos (=), 3.triplos " << endl;
+		cin >> a;
+		if (a == 1)
 		{
-			cout << "Enter a valid value " << endl;
-		}
-		else {
-			h = 2 * c + 2;
-			o = (h / 2 + 2 * c) / 2;
-			cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "CO2" << endl;
+			cout << "Enter the number of C " << endl;
+			cin >> c;
+			system("Pause");
+			if (c <= 0)
+			{
+				cout << "Enter a valid value " << endl;
+				cout << "==============================================================================================" << endl;
+			}
+			else {
+				h = 2 * c + 2;
+				o = (h / 2 + 2 * c) / 2;
+				cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "CO2" << endl;
+				cout << "==============================================================================================" << endl;
+			}
+
 		}
 
-	}
-
-	else if (a == 2)
-	{
-		cout << "Enter the number of C " << endl;
-		cin >> c;
-		if (c <= 0)
+		else if (a == 2)
 		{
-			cout << "Enter a valid value " << endl;
-		}
-		else {
-			h = 2 * c;
-			o = (h / 2 + 2 * c) / 2;
-			cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "CO2" << endl;
+			cout << "Enter the number of C " << endl;
+			cin >> c;
+			system("Pause");
+			if (c <= 0)
+			{
+				cout << "Enter a valid value " << endl;
+				cout << "==============================================================================================" << endl;
+			}
+			else {
+				h = 2 * c;
+				o = (h / 2 + 2 * c) / 2;
+				cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "CO2" << endl;
+				cout << "==============================================================================================" << endl;
+			}
+
 		}
 
-	}
-
-	else
-	{
-		cout << "Enter the number of C " << endl;
-		cin >> c;
-		if (c <= 0)
+		else
 		{
-			cout << "Enter a valid value " << endl;
-		}
-		else {
-			h = 2 * c - 2;
-			o = (h / 2 + 2 * c) / 2;
-			cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "CO2" << endl;
+			cout << "Enter the number of C " << endl;
+			cin >> c;
+			system("Pause");
+			if (c <= 0)
+			{
+				cout << "Enter a valid value " << endl;
+				cout << "==============================================================================================" << endl;
+			}
+			else {
+				h = 2 * c - 2;
+				o = (h / 2 + 2 * c) / 2;
+				cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "CO2" << endl;
+				cout << "==============================================================================================" << endl;
+			}
+
 		}
 
 	}
