@@ -7,8 +7,8 @@ int main()
 {
 	while (true)
 	{
-		int a, c, h;
-		double o;
+		int a, c;
+		double o, h;
 		cout << "Choose ton desmo tvn anthrakvn 1.monos (-), 2.diplos (=), 3.triplos " << endl;
 		cin >> a;
 		if (a == 1)
