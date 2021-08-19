@@ -16,7 +16,7 @@ string replace(int c)
 }
 int main()
 {
-	cout << "Welcome to MathFlare's c++ complete hydrocarbon combution calculator" << endl;
+	cout << "Welcome to MathFlare's c++ complete hydrocarbon combustion calculator" << endl;
 	cout << "--------------------------------------------------------------------" << endl;
 	while (true)
 	{
