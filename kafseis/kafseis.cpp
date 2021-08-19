@@ -2,14 +2,25 @@
 //
 
 #include <iostream>
+#include <string>
 using namespace std;
+
+string replace(int c)
+{
+	string str = "";
+	if (c != 1)
+	{
+		str += to_string(c);
+	}
+	return str;
+}
 int main()
 {
 	while (true)
 	{
 		int a, c;
 		double o, h;
-		cout << "Choose ton desmo tvn anthrakvn 1.monos (-), 2.diplos (=), 3.triplos " << endl;
+		cout << "Choose the bond type of the carbons 1.single (-), 2.double (=), 3.triple" << endl;
 		cin >> a;
 		if (a == 1)
 		{
@@ -24,12 +35,10 @@ int main()
 			else {
 				h = 2 * c + 2;
 				o = (h / 2 + 2 * c) / 2;
-				cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "CO2" << endl;
+				cout << "H" << h << "C" << replace(c) << " + " << o << "O2 --> " << h / 2 << "H2O + " << replace(c) << "CO2" << endl;
 				cout << "==============================================================================================" << endl;
 			}
-
 		}
-
 		else if (a == 2)
 		{
 			cout << "Enter the number of C " << endl;
@@ -46,10 +55,8 @@ int main()
 				cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "CO2" << endl;
 				cout << "==============================================================================================" << endl;
 			}
-
 		}
-
-		else
+		else if (a == 3)
 		{
 			cout << "Enter the number of C " << endl;
 			cin >> c;
@@ -65,12 +72,13 @@ int main()
 				cout << "H" << h << "C" << c << " + " << o << "O2 --> " << h / 2 << "H2O + " << c << "CO2" << endl;
 				cout << "==============================================================================================" << endl;
 			}
-
 		}
-
+		else
+		{
+			cout << "Wrong input" << endl;
+			break;
+		}
 	}
-
-
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
